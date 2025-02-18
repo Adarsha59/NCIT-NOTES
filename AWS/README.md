@@ -260,86 +260,93 @@ No more costs for:
 6. Buddha Air is planning to move its entire Infrastructure from On-premises to Cloud based Infrastructure. Identify and compare the Total Cost of Ownership (TCO) for on-premises and cloud based infrastructure. The Total Cost of Ownership should include Server Costs, Storage Cost, Network Cost and IT Labor Cost.
 ```
 
-**clear and structured** cost breakdown for **on-premises vs. cloud-based infrastructure**, ensuring all key factors like **bandwidth, training, maintenance, and IT staff** are properly included.
+Here is the **detailed 3-year Total Cost of Ownership (TCO) breakdown** for **On-Premises vs. AWS Cloud** for Buddha Air,
 
 ---
 
-## **1. On-Premises TCO Breakdown**
+## **1. On-Premises TCO Breakdown (3 Years)**
+
+💡 _On-premises infrastructure requires significant upfront investment in hardware, network, and IT labor, along with ongoing maintenance and operational costs._
 
 ### **1. Server Cost**
 
-- **Initial Costs**: $100,000 (per physical server – includes hardware, installation, power setup)
-- **Maintenance Costs (Over 5 Years)**: $50,000 (cooling, power, hardware replacement)
-- **Total (5 Years)**: **$150,000**
+- **Initial Costs**: $75,000 _(Physical servers, installation, power setup)_
+- **Maintenance Costs (Over 3 Years)**: $16,922 _(Cooling, power, hardware replacement at ~7.5% annually)_
+- **Total (3 Years)**: **$91,922**
 
 ### **2. Storage Cost**
 
-- **Initial Costs**: $50,000 (Storage Area Network (SAN), backup solutions)
-- **Maintenance Costs (Over 5 Years)**: $25,000 (storage expansion, data redundancy, security)
-- **Total (5 Years)**: **$75,000**
+- **Initial Costs**: $50,000 _(Storage Area Network (SAN), NAS, backup solutions)_
+- **Maintenance Costs (Over 3 Years)**: $17,840 _(Storage expansion, data redundancy, security)_
+- **Total (3 Years)**: **$67,840**
 
 ### **3. Network Cost**
 
-- **Initial Costs**: $20,000 (firewalls, routers, switches, load balancers)
-- **Bandwidth Costs (5 Years)**: $60,000 ($12,000/year for a dedicated high-speed connection)
-- **Maintenance Costs (Over 5 Years)**: $20,000 (hardware replacement, upgrades)
-- **Total (5 Years)**: **$100,000**
+- **Initial Costs**: $5,000 _(Firewalls, routers, switches, load balancers)_
+- **Bandwidth Costs (3 Years)**: $3,600 _(~$100/month for a dedicated connection)_
+- **Maintenance Costs (Over 3 Years)**: $1,060 _(Upgrades, replacements)_
+- **Total (3 Years)**: **$7,660**
 
 ### **4. IT Labor Cost (Including Training & Maintenance)**
 
-- **Initial Training Cost**: $10,000 (for cloud migration, cybersecurity, maintenance)
-- **Annual IT Salaries (5 Years)**: $400,000 ($80,000/year for IT staff managing hardware, software, security)
-- **Total (5 Years)**: **$410,000**
+- **Training Cost**: $2,000 _(Cloud migration training, cybersecurity, software maintenance)_
+- **Total (3 Years)**: **$2,000**
 
-### **On-Premises Total Cost of Ownership (TCO) Over 5 Years**
+### **On-Premises Total Cost of Ownership (TCO) Over 3 Years**
 
-💰 **$150,000 (Server) + $75,000 (Storage) + $100,000 (Network) + $410,000 (IT Labor) = $735,000**
-
----
-
-## **2. Cloud-Based TCO Breakdown**
-
-### **1. Server Cost (Compute Instances - AWS EC2, Azure VMs, GCP Compute Engine)**
-
-- **Initial Costs**: $0 (no hardware purchase)
-- **Annual Costs (Based on Usage)**: $60,000 ($5,000/month for scalable compute resources)
-- **Total (5 Years)**: **$300,000**
-
-### **2. Storage Cost (AWS S3, Azure Blob, Google Cloud Storage)**
-
-- **Initial Costs**: $0 (storage is provisioned on demand)
-- **Annual Costs (Based on Usage)**: $12,000 ($1,000/month for object storage, backups, redundancy)
-- **Total (5 Years)**: **$60,000**
-
-### **3. Network Cost (Cloud Bandwidth, CDN, Load Balancers, VPNs)**
-
-- **Initial Costs**: $0 (no hardware setup)
-- **Annual Costs**: $24,000 ($2,000/month for data transfer, CDN, security policies)
-- **Total (5 Years)**: **$120,000**
-
-### **4. IT Labor Cost (Including Training & Maintenance)**
-
-- **Initial Training Cost**: $5,000 (cloud adoption training)
-- **Annual IT Salaries (5 Years)**: $200,000 ($40,000/year for cloud engineers, DevOps)
-- **Total (5 Years)**: **$205,000**
-
-### **Cloud-Based Total Cost of Ownership (TCO) Over 5 Years**
-
-💰 **$300,000 (Server) + $60,000 (Storage) + $120,000 (Network) + $205,000 (IT Labor) = $685,000**
+💰 **$91,922 (Server) + $67,840 (Storage) + $7,660 (Network) + $2,000 (IT Labor) = $167,422**
 
 ---
 
-## **Comparison Summary**
+## **2. AWS TCO Breakdown (3 Years)**
 
-| Cost Category     | On-Premises (5 Years) | Cloud-Based (5 Years) |
-| ----------------- | --------------------- | --------------------- |
-| **Server Cost**   | $150,000              | $300,000              |
-| **Storage Cost**  | $75,000               | $60,000               |
-| **Network Cost**  | $100,000              | $120,000              |
-| **IT Labor Cost** | $410,000              | $205,000              |
-| **Total TCO**     | **$735,000**          | **$685,000**          |
+💡 _AWS operates on a pay-as-you-go model, significantly reducing capital expenses and eliminating maintenance costs._
+
+### **1. Server Cost (AWS EC2 Compute)**
+
+- **Monthly Cost**: $70 (t3.medium instance)
+- **Total (3 Years)**: **$2,547**
+
+### **2. Storage Cost (AWS S3 & Backup)**
+
+- **Monthly Cost**: ~$140 _(3TB on Amazon S3 + backup storage)_
+- **Total (3 Years)**: **$4,963**
+
+### **3. Network Cost (Bandwidth, Load Balancer, VPN, Outbound Data)**
+
+- **AWS covers most networking costs**
+- **Total (3 Years)**: **Included**
+
+### **4. IT Labor Cost (Managed Services Reduce Labor Needs)**
+
+- **AWS eliminates most maintenance and training needs**
+- **Total (3 Years)**: **Included**
+
+### **AWS Total Cost of Ownership (TCO) Over 3 Years**
+
+💰 **$2,547 (Server) + $4,963 (Storage) + $0 (Network) + $0 (IT Labor) = $7,509**
 
 ---
+
+## **3-Year Total Cost of Ownership (TCO) Comparison**
+
+| **Category**                                  | **On-Premises** | **AWS Cloud** |
+| --------------------------------------------- | --------------- | ------------- |
+| **Servers** (Hardware, Compute)               | **$91,922**     | **$2,547**    |
+| **Storage** (SAN/NAS, Backups, Cloud Storage) | **$67,840**     | **$4,963**    |
+| **Network** (Bandwidth, Load Balancing, VPN)  | **$7,660**      | **Included**  |
+| **IT Labor** (Maintenance, Admin, Training)   | **$2,000**      | **Included**  |
+| **Total 3-Year TCO**                          | **$167,422**    | **$7,509**    |
+| **Total Savings (96%)**                       |                 | **$159,913**  |
+
+---
+
+### **Key Takeaways:**
+
+- By migrating to **AWS Cloud**, **Buddha Air can save up to 96%** of the total cost.
+- The **3-year total savings would be $159,913** compared to on-premises infrastructure.
+- **AWS eliminates costs** for **network infrastructure, IT labor, and maintenance**, reducing the operational burden.
+- **AWS's pay-as-you-go model** ensures you only pay for what you use, avoiding large upfront capital expenditures.
 
 - **Cloud-Based Infrastructure** saves on IT labor costs and provides better **scalability & flexibility**, making it **more cost-effective** in the long run.
 - **On-Premises** is **more expensive** due to **high upfront costs, maintenance, and IT staffing** but provides complete control over infrastructure.
